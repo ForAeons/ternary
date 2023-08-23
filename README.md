@@ -17,8 +17,8 @@ The `ternary` package provides utilities to write ternary operations in Go. It i
 
    ```go
    var err error
-   result1 := ternary.LazyOp[string](err != nil, func() int { return "not nil" }, func() int { return "nil" }) // result will be 10
-   result2 := ternary.LazyOp[int](5 > 3, func() int { return 10 }, func() int { return 20 }) // type inference will infer the type of result to be int
+   result1 := ternary.LazyOp[string](err != nil, func() int { return "not nil" }, func() int { return "nil" }) // result will be "nil"
+   result2 := ternary.LazyOp(5 > 3, func() int { return 10 }, func() int { return 20 }) // type inference will infer the type of result to be int
    ```
 
    You can also use it to avoid nil pointer dereferences:
