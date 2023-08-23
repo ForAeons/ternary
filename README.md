@@ -1,5 +1,7 @@
 # Package `ternary`
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/ForAeons/ternary.svg)](https://pkg.go.dev/github.com/ForAeons/ternary)
+
 The `ternary` package provides utilities to write ternary operations in Go. It includes both strict and lazy evaluation of ternary expressions, allowing for more concise and functional programming.
 
 ## Functions
